@@ -1,0 +1,96 @@
+.preferences-dialog {
+  width: 40%;
+  min-width: 650px;
+
+  .dialog-title {
+    display: inline-block;
+  }
+
+  .form-search {
+    float:right;
+  }
+
+  .btn {
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .side-panel {
+    width: 30%;
+    position: relative;
+    min-height: 300px;
+    overflow: auto;
+    flex-grow: 0;
+  }
+
+  .side-panel-container {
+    position: absolute;
+    height: 100%;
+    width:100%;
+  }
+
+  ul {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .main-panel {
+    margin-left: 10px;
+    position: relative;
+    overflow: auto;
+    flex-grow: 1;
+  }
+
+  .main-panel-container {
+    position: absolute;
+    height: 100%;
+    width:100%;
+    -webkit-user-select: text;
+  }
+
+  .nav-header {
+    font-size: 1.1em;
+  }
+
+  .a, a:link, a:visited, a:hover {
+    color: #333;
+    white-space: nowrap;
+  }
+
+  legend {
+    font-weight: bolder;
+    color: inherit;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .pref-line {
+    margin-bottom: 5px;
+  }
+
+  .preference-changed {
+    color: forestgreen;
+    font-style: oblique;
+  }
+
+}
+
+.dark .preferences-dialog {
+  a, a:link, a:visited {
+    color: inherit;
+  }
+  a:hover {
+    background-color: grey;
+  }
+
+  .preference-changed {
+    color: greenyellow;
+  }
+}

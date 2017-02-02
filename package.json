@@ -1,0 +1,45 @@
+{
+  "name": "brackets-preferences",
+  "title": "Brackets Preferences",
+  "version": "1.0.0",
+  "description": "Preferences editor for Brackets. Display/edit all preferences. Have regex search for preference.",
+  "keywords": [
+    "preferences",
+    "setup",
+    "brackets"
+  ],
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "bind": "tools\\bind.cmd",
+    "unbind": "tools\\bind.cmd -u",
+    "prerelease": "webpack",
+    "release": "node ./tools/build.js ."
+  },
+  "repository": {
+    "type": "hg",
+    "url": "git@github.com:kolipka/brackets-preferences.git"
+  },
+  "author": "Konrad Lipner",
+  "homepage": "https://github.com/kolipka/brackets-preferences",
+  "license": "MIT",
+  "engines": {
+    "brackets": ">=1.4.0"
+  },
+  "dependencies": {
+    "redom": "https://bitbucket.org/kali777/redom/downloads/redom-0.1.1.tar.gz"
+  },
+  "devDependencies": {
+    "archiver": "^0.21.0",
+    "babel-core": "^6.7.0",
+    "babel-eslint": "^4.1.6",
+    "babel-loader": "^6.2.0",
+    "babel-polyfill": "^6.6.1",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.0.2",
+    "jsx-transform": "^2.3.0",
+    "webpack": "^1.12.9"
+  }
+}
